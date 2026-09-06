@@ -1,0 +1,37 @@
+{
+    "name": "bugfinder/version-updater",
+    "description": "A robust, 1-click version updater package for Laravel applications by BugFinder.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "BugFinder",
+            "email": "support@bugfinder.net"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "illuminate/support": "^9.0|^10.0|^11.0",
+        "illuminate/console": "^9.0|^10.0|^11.0",
+        "illuminate/http": "^9.0|^10.0|^11.0",
+        "illuminate/routing": "^9.0|^10.0|^11.0",
+        "illuminate/filesystem": "^9.0|^10.0|^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "BugFinder\\Updater\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "BugFinder\\Updater\\BugFinderUpdaterServiceProvider"
+            ],
+            "aliases": {
+                "Updater": "BugFinder\\Updater\\Facades\\Updater"
+            }
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
