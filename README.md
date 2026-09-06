@@ -1,4 +1,4 @@
-# BugFinder Version Updater (`bugfinder/version-updater`)
+# BugFinder Version Updater (`bfinder/version-updater`)
 
 A robust, secure 1-click version updater package for Laravel products (developed by BugFinder). It provides a Web UI dashboard and CLI command to update Laravel CodeCanyon products effortlessly.
 
@@ -17,9 +17,14 @@ A robust, secure 1-click version updater package for Laravel products (developed
 
 ## Installation Guide
 
-### Option 1: Via Composer (Local Repository or Private Package)
-Add the package to your main product's `composer.json`:
+### Option 1: Via Composer (Local Repository or Packagist)
+Add the package to your main product's `composer.json` or install via Packagist:
 
+```bash
+composer require bfinder/version-updater
+```
+
+Or for local development:
 ```json
 "repositories": [
     {
@@ -28,13 +33,13 @@ Add the package to your main product's `composer.json`:
     }
 ],
 "require": {
-    "bugfinder/version-updater": "*"
+    "bfinder/version-updater": "*"
 }
 ```
 
 Then run:
 ```bash
-composer update bugfinder/version-updater
+composer update bfinder/version-updater
 ```
 
 ### Option 2: Publish Config & Views

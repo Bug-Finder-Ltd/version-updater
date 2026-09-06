@@ -1,5 +1,5 @@
 {
-    "name": "bugfinder/version-updater",
+    "name": "bfinder/version-updater",
     "description": "A robust, 1-click version updater package for Laravel applications by BugFinder.",
     "type": "library",
     "license": "MIT",
